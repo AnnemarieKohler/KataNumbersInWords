@@ -23,7 +23,7 @@ class NumbersInWords
     19 => 'nineteen'
     }
 
-  def convert(num)
+  def convert_to_word(num)
     HASH[num]
   end
 

@@ -20,11 +20,21 @@ class NumbersInWords
     16 => 'sixteen',
     17 => 'seventeen',
     18 => 'eighteen',
-    19 => 'nineteen'
+    19 => 'nineteen',
+    20 => 'twenty',
+    30 => 'thirty',
+    40 => 'fourty',
+    50 => 'fifty',
+    60 => 'sixty',
+    70 => 'seventy',
+    80 => 'eighty',
+    90 => 'ninety'
     }
 
   def convert_to_word(num)
     HASH[num]
   end
+
+
 
 end

@@ -2,7 +2,7 @@ require 'numbers_in_words'
 
 describe NumbersInWords do
   subject(:number) { described_class.new }
-  
+
   it 'converts digits into words' do
     expect(convert_to_word(0)).to eq 'zero'
     expect(convert_to_word(1)).to eq 'one'
@@ -29,6 +29,18 @@ describe NumbersInWords do
     expect(convert_to_word(19)).to eq 'nineteen'
   end
 
+  it 'converts multiples of ten into words up until 90' do
+    expect(convert_to_word(20)).to eq 'twenty'
+    expect(convert_to_word(30)).to eq 'thirty'
+    expect(convert_to_word(40)).to eq 'fourty'
+    expect(convert_to_word(50)).to eq 'fifty'
+    expect(convert_to_word(60)).to eq 'sixty'
+    expect(convert_to_word(70)).to eq 'seventy'
+    expect(convert_to_word(80)).to eq 'eighty'
+    expect(convert_to_word(90)).to eq 'ninety'
+  end
+
+  it
 
 
   # xit 'converts num in words' do

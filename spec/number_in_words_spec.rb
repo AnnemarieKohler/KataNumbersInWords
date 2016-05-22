@@ -40,7 +40,21 @@ describe NumbersInWords do
     expect(convert_to_word(90)).to eq 'ninety'
   end
 
-  it
+  it 'calculates the numbers that are not evenly divisble by 10' do
+    expect(convert_to_word(21)).to eq 'twenty one'
+  end
+
+  # it 'converts hundreds into words until 900' do
+  #   expect(convert_to_word(100)).to eq 'one hundred'
+  #   expect(convert_to_word(200)).to eq 'two hundred'
+  #   expect(convert_to_word(300)).to eq 'three hundred'
+  #   expect(convert_to_word(400)).to eq 'four hundred'
+  #   expect(convert_to_word(500)).to eq 'five hundred'
+  #   expect(convert_to_word(600)).to eq 'six hundred'
+  #   expect(convert_to_word(700)).to eq 'seven hundred'
+  #   expect(convert_to_word(800)).to eq 'eight hundred'
+  #   expect(convert_to_word(900)).to eq 'nine hundred'
+  # end
 
 
   # xit 'converts num in words' do
